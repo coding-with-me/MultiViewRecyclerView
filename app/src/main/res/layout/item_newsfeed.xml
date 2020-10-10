@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imgProfile"
+            tools:src="@drawable/ic_profile_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtName"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:textSize="14dp"
+                android:text="CodingWithMe"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTime"
+                android:textColor="@color/colorGray"
+                android:textSize="12dp"
+                android:text="48 mins"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="visible"
+            android:id="@+id/layoutText">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPostText"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp"
+                android:text="post text"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:id="@+id/layoutImage">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPostImage"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp"
+                android:text="post text"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imgPost"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_image_thumbnail"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:id="@+id/layoutVideo">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPostVideo"
+                android:textColor="@color/colorBlack"
+                android:textSize="12dp"
+                android:text="post text"/>
+
+            <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerSimple
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/videoView"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
